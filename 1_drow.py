@@ -20,10 +20,7 @@ pygame.display.update()
 clock = pygame.time.Clock()
 finished = False
 
-# Наконец, нужно создать основной цикл, в котором будут отслеживаться
-# происходящие события.
-# Пока единственное событие, которое нас интересует - выход из программы
-while not finished:
+    while not finished:
     clock.tick(FPS)
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
